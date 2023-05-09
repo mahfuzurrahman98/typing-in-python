@@ -1,12 +1,12 @@
-# create a ariable myName which should be a string and then assign "Mahfuz" to it and then print it, use typehinting
 myName: str = "Mahfuz"
 print(myName)
 
 
-def add(a: int, b: int) -> int:
-    return a + b
+def add(a: int, b: int, c: float = 0.5) -> float:
+    return a + b + c
 
 try:
-    print(add(1, 2))
+    x = add(1, 2, 4)
+    print(x)
 except Exception as e:
     print(e)
